@@ -1,10 +1,10 @@
 locals {
-  data_lake_bucket = "dtc_data_lake"
+  data_lake_bucket = "dam_resorvoir_data_lake"
 }
 
 variable "project" {
   description = "Project-ID"
-  default = "shoemaker-datazoomcamp"
+  default = "energy-consumption-419814"
 }
 
 variable "region" {
@@ -21,5 +21,5 @@ variable "storage_class" {
 variable "BQ_DATASET" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
   type = string
-  default = "divvy_trips_data"
+  default = "dam_resorvoir_dwh"
 }
